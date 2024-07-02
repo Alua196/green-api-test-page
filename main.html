@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Green-Api Test Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-1 ">
+                <div class="form-group">
+                  <input type="idInstance" class="form-control" placeholder="idInstance" id="idInstance">
+                </div>
+                <div class="form-group">
+                  <input type="ApiTokenInstance" class="form-control" placeholder="ApiTokenInstance" id="ApiTokenInstance">
+                </div>
+                <button type="button" class="btn btn-outline-info" onclick="getSettings()">Get Settings</button>
+                <button type="button" class="btn btn-outline-info" onclick="getStateInstance()">Get State Instance</button>
+
+
+                <div class="form-group">
+                    <input type="number1" class="form-control" placeholder="number:" id="number1">
+                    <textarea type="sendMessage" class="form-control" placeholder="sendMessage" id="sendMessage"></textarea>
+                </div>
+                <button type="button" class="btn btn-outline-info" onclick="sendMessage()">Send Message</button>
+
+
+                <div class="form-group">
+                    <input type="number2" class="form-control" placeholder="number:" id="number2">
+                    <textarea type="sendFileByUrl" class="form-control" placeholder="sendFileByUrl" id="sendFileByUrl"></textarea>
+                </div>
+                <button type="button" class="btn btn-outline-info" onclick="sendFileByUrl()">Send File By URL</button>
+            </div>
+
+            <div class="response-1">
+                <div class="form-group ">
+                    <label for="response">Response</label>
+                    <textarea id="response" class="readonly" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
