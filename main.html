@@ -4,6 +4,8 @@
         <title>Green-Api Test Page</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+        
     </head>
     <body>
         <div class="container">
@@ -12,7 +14,7 @@
                   <input type="idInstance" class="form-control" placeholder="idInstance" id="idInstance">
                 </div>
                 <div class="form-group">
-                  <input type="ApiTokenInstance" class="form-control" placeholder="ApiTokenInstance" id="ApiTokenInstance">
+                  <input type="apiTokenInstance" class="form-control" placeholder="ApiTokenInstance" id="apiTokenInstance">
                 </div>
                 <button type="button" class="btn btn-outline-info" onclick="getSettings()">Get Settings</button>
                 <button type="button" class="btn btn-outline-info" onclick="getStateInstance()">Get State Instance</button>
@@ -27,6 +29,7 @@
 
                 <div class="form-group">
                     <input type="number2" class="form-control" placeholder="number:" id="number2">
+                    <input type="fileName" class="form-control" placeholder="fileName:" id="fileName">
                     <textarea type="sendFileByUrl" class="form-control" placeholder="sendFileByUrl" id="sendFileByUrl"></textarea>
                 </div>
                 <button type="button" class="btn btn-outline-info" onclick="sendFileByUrl()">Send File By URL</button>
@@ -39,5 +42,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="scripts.js"></script>
     </body>
 </html>
